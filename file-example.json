@@ -1,0 +1,7 @@
+{
+    "employees":[  
+        {"name":"Pedro", "email":"pedroemail@contoso.com"},  
+        {"name":"Bob", "email":"bobemail@contoso.com"},  
+        {"name":"Amber", "email":"amberemail@contoso.com"}  
+    ]
+}  

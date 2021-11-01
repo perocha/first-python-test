@@ -73,3 +73,10 @@ companies_list2 = companies.copy()
 companies.clear()
 print (companies)
 print (companies_list2)
+
+filtered_list = filter (lambda x: x=="Microsoft", companies_list2)
+print (list(filtered_list))
+
+new_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+filtered_list = filter (lambda x: x>3, new_list)
+print (list(filtered_list))
