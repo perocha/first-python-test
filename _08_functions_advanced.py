@@ -1,7 +1,11 @@
+'''
+Some more advanced usage of functions
+'''
 import statistics as st
+import time
 
-# Function that returns 3 separate values
 def describe(sample):
+    '''Function that returns 3 separate values'''
     return st.mean(sample), st.median(sample), st.mode(sample)
 
 # Call with 3 separate variables
@@ -15,13 +19,11 @@ print (mode)
 desc = describe (my_sample)
 print (desc)
 
-'''
-Decorator function
-'''
-import time
-
+#
 # Decorator function to get execution time of another function
+#
 def my_timer(func):
+    '''My time decorator function'''
     def _timer(*args, **kwargs):
         print(f"my_timer::start {args}")
         start = time.time()
@@ -34,21 +36,24 @@ def my_timer(func):
 # Add the decorator function before the function
 @my_timer
 def this_is_a_test(argument):
+    '''Dummy function to test a decorator function'''
     print (f"this_is_a_test::start {argument}")
     time.sleep(1)
     print ("this_is_a_test::after 1 sec")
     time.sleep(2)
     print ("this_is_a_test::after 2 sec")
-    return None
 
+# Test the decorator function
 this_is_a_test ("prueba")
 
-'''
-More functions
-'''
-def my_function (a, b, *args, **kwargs):
-    print (f"a: {a}")
-    print (f"b jk,: {b}")
+
+#
+# Additional examples of functions
+#
+def my_function (arg1, arg2, *args, **kwargs):
+    '''Function to test multiple arguments'''
+    print (f"a: {arg1}")
+    print (f"b jk,: {arg2}")
     print (f"args: {args}")
     print (f"kwargs: {kwargs}")
     i = 0
@@ -59,7 +64,7 @@ def my_function (a, b, *args, **kwargs):
     for arguments in kwargs.values():
         print (f"kwargs[{i}]: {arguments}")
         i += 1
-    return a, b
+    return arg1, arg2
 
 print ("call my_function 1 ***************")
 my_result = my_function ("a", "b")

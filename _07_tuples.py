@@ -1,3 +1,6 @@
+'''
+Typles examples
+'''
 mytuple = ("apple", "cherry", "banana")     # parentesis
 mylist = ["apple", "cherry", "banana"]      # brackets
 
