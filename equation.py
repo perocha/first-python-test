@@ -26,7 +26,7 @@ class Equation:
                 return self.result
             return False
         except TypeError:
-            print (f"Type error in parameters")
+            print ("Type error in parameters")
             return False
 
     def print_result (self):
