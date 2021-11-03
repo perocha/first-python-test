@@ -2,7 +2,7 @@
 Example of using Twitter API
 '''
 from twitter import Twitter, OAuth
-import hidden
+import hidden_dummy
 
 # Get my credentials that are hidden in file hidden.py that contains a function called oauth
 #   def oauth():

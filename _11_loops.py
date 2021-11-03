@@ -43,7 +43,8 @@ def for_loops():
     for index in range(3,9):
         print (index)
 
-    for index in range(len(friends)):
+    length = len(friends)
+    for index in range(length):
         print (friends[index])
 
 
@@ -52,6 +53,7 @@ def for_loops():
         my_range = range (my_power)
         for index in my_range:
             result = result * my_num
+            print (index)
         return result
 
     print (raise_to_power (5, 6))
