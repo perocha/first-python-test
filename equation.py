@@ -1,31 +1,35 @@
-import re
+'''
+Equation class
+'''
 
 class Equation:
+    '''Class Equation'''
     number1 = 0
     number2 = 0
     result = 0
     operation = ""
 
     def __init__(self, number1, number2, operation) -> None:
+        '''Class constructor'''
         self.number1 = number1
         self.number2 = number2
         self.operation = operation
-        return None
 
     def calculate_result (self):
+        '''Calculate the result of the equation'''
         try:
             if self.operation == "+":
                 self.result = self.number1 + self.number2
                 return self.result
-            elif self.operation == "-":
+            if self.operation == "-":
                 self.result = self.number1 - self.number2
                 return self.result
-            else:
-                return False
+            return False
         except:
             return False
 
     def print_result (self):
+        '''Calculate and print the result with the specific format'''
         # First lets make sure we calculate the result of the operation
         self.calculate_result()
 
@@ -50,5 +54,3 @@ class Equation:
         trailing_spaces = max_lenght - len_result
         print (" " * trailing_spaces, end = "")
         print (f"{self.result}")
-
-        return None
