@@ -25,7 +25,8 @@ class Equation:
                 self.result = self.number1 - self.number2
                 return self.result
             return False
-        except:
+        except TypeError:
+            print (f"Type error in parameters")
             return False
 
     def print_result (self):
