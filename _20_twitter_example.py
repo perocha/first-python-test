@@ -1,6 +1,8 @@
-from twitter import *
+'''
+Example of using Twitter API
+'''
+from twitter import Twitter, OAuth
 import hidden
-import os
 
 # Get my credentials that are hidden in file hidden.py that contains a function called oauth
 #   def oauth():
@@ -32,14 +34,14 @@ print (friend_timeline[0])
 # twitter.statuses.update(status="Trying out changing my status in Twitter using Python")
 
 # Send a direct message
-'''
-twitter.direct_messages.events.new(
-    _json={
-        "event": {
-            "type": "message_create",
-            "message_create": {
-                "target": {
-                    "recipient_id": twitter.users.show(screen_name=friend)["id"]},
-                "message_data": {
-                    "text": "This message was sent with Python!"}}}})
-'''
+#'''
+#twitter.direct_messages.events.new(
+#    _json={
+#        "event": {
+#            "type": "message_create",
+#            "message_create": {
+#                "target": {
+#                    "recipient_id": twitter.users.show(screen_name=friend)["id"]},
+#                "message_data": {
+#                    "text": "This message was sent with Python!"}}}})
+#'''

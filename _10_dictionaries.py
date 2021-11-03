@@ -1,3 +1,6 @@
+'''
+Example of using dictioraries
+'''
 monthConversions = {
     "Jan": "January",
     "Feb": "February",

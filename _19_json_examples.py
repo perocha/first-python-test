@@ -1,10 +1,13 @@
+'''
+Example of using json
+'''
 import json
 import requests
 
 #
 # Open a file and deserialize as json
 #
-with open("file-example.json", "r") as my_file:
+with open("file-example.json", "r", encoding="utf-8") as my_file:
     file_data = my_file.read ()
 
 my_json_info = json.loads (file_data)
@@ -47,5 +50,5 @@ print (f"Filtered list size with completed TODOs from user 1 = {len(my_list)}")
 print (my_list)
 
 # Write the filtered json into a new file
-with open("filtered-file-example.json", "w") as data_file:
+with open("filtered-file-example.json", "w", encoding="utf-8") as data_file:
     json.dump(my_list, data_file, indent=2)

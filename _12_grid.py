@@ -1,3 +1,6 @@
+'''
+Examples of using grids
+'''
 number_grid = [
     [1, 2, 3],
     [4, 5, 6],
@@ -15,4 +18,3 @@ print ("\nUse a FOR loop to print the grid")
 for row in number_grid:
     for col in row:
         print (col)
-

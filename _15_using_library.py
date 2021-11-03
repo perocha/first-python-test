@@ -1,3 +1,6 @@
+'''
+Import a custom Python module, located in the same folder
+'''
 # Import another Python file (stored in the same folder as useful_tools.py)
 import useful_tools
 

@@ -1,11 +1,12 @@
-import equation
+'''
+A program to calculate simple arithmetic problems and print the result in a formatted way
 
-def test_function (a, b, c) -> int:
-    a = 0
-    b = 1
-    c = 2
-    return False
-    return a + b + c
+ 32
++ 8
+---
+ 40
+'''
+import equation
 
 # arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
 
@@ -22,6 +23,3 @@ equation3.print_result ()
 
 equation4 = equation.Equation (523, 49, "-")
 equation4.print_result ()
-
-test = test_function (5, 6, 7)
-print (test)

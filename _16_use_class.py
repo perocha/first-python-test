@@ -1,3 +1,6 @@
+'''
+Example of using a class
+'''
 from company import Company
 from small_company import SmallCompany
 
