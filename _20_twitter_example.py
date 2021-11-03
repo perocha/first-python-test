@@ -10,7 +10,7 @@ import hidden_dummy
 #           "consumer_secret": "<consumer secret>",
 #           "token_key": "<token key>",
 #           "token_secret": "<token secret>"}
-MY_TWITTER_CREDS = hidden.oauth()
+MY_TWITTER_CREDS = hidden_dummy.oauth()
 
 # Authenticate using my secrets
 twitter = Twitter(auth=OAuth(MY_TWITTER_CREDS["token_key"],
